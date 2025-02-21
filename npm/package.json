@@ -1,0 +1,70 @@
+{
+  "name": "@bearz/runtime-info",
+  "version": "0.1.0",
+  "description": "Get information about the current javascript runtime and operating system.",
+  "keywords": [
+    "runtime",
+    "operating system",
+    "os",
+    "bearz"
+  ],
+  "homepage": "bearz.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bearz-io/js-runtime-info.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bearz-io/js-runtime-info/discussions"
+  },
+  "module": "./esm/mod.js",
+  "types": "./types/mod.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./types/mod.d.ts",
+        "default": "./esm/mod.js"
+      }
+    },
+    "./js": {
+      "import": {
+        "types": "./types/js.d.ts",
+        "default": "./esm/js.js"
+      }
+    },
+    "./os": {
+      "import": {
+        "types": "./types/os.d.ts",
+        "default": "./esm/os.js"
+      }
+    },
+    "./globals": {
+      "import": {
+        "types": "./types/globals.d.ts",
+        "default": "./esm/globals.js"
+      }
+    }
+  },
+  "scripts": {
+    "test": "node --test",
+    "test:bun": "bun test"
+  },
+  "authors": [
+    {
+      "name": "jolt9dev",
+      "email": "dev@jolt9.com"
+    }
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "type": "module",
+  "dependencies": {},
+  "devDependencies": {
+    "picocolors": "^1.0.0",
+    "@types/node": "^22.13.4",
+    "@bearz/testing": "^0.0.0",
+    "@bearz/assert": "^0.1.0"
+  },
+  "_generatedBy": "dnt@dev"
+}

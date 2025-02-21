@@ -1,0 +1,17 @@
+{
+    "name": "@bearz/runtime-info",
+    "description": "Get information about the current javascript runtime and operating system.",
+    "version": "0.1.0",
+    "keywords": [
+        "runtime",
+        "operating system",
+        "os",
+        "bearz"
+    ],
+    "exports": {
+        ".": "./mod.ts",
+        "./js": "./js.ts",
+        "./os": "./os.ts",
+        "./globals": "./globals.ts"
+    }
+}
